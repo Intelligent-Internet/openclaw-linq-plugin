@@ -5,13 +5,15 @@ import {
   deleteAccountFromConfigSection,
   formatPairingApproveHint,
   getChatChannelMeta,
-  LinqConfigSchema,
   migrateBaseNameToDefaultAccount,
   normalizeAccountId,
   setAccountEnabledInConfigSection,
-  type ChannelPlugin,
-  type OpenClawConfig,
-} from "openclaw/plugin-sdk";
+} from "openclaw/plugin-sdk/core";
+import type { ChannelPlugin, OpenClawConfig } from "openclaw/plugin-sdk/src/plugins/types.js";
+
+// LinqConfigSchema is not yet exported by the SDK — use an empty schema.
+// buildChannelConfigSchema() wraps it with standard channel fields.
+const LinqConfigSchema = {};
 import type { ResolvedLinqAccount } from "./linq/accounts.js";
 import type { LinqProbe } from "./linq/types.js";
 import {

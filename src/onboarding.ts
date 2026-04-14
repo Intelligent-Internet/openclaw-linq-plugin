@@ -1,6 +1,7 @@
-import type { OpenClawConfig, DmPolicy, WizardPrompter } from "openclaw/plugin-sdk";
-import type { ChannelOnboardingAdapter, ChannelOnboardingDmPolicy } from "openclaw/plugin-sdk";
-import { DEFAULT_ACCOUNT_ID, normalizeAccountId, addWildcardAllowFrom, promptAccountId } from "openclaw/plugin-sdk";
+import type { OpenClawConfig, DmPolicy, WizardPrompter } from "openclaw/plugin-sdk/src/plugins/types.js";
+import type { ChannelOnboardingAdapter, ChannelOnboardingDmPolicy } from "openclaw/plugin-sdk/src/channels/plugins/types.js";
+import { DEFAULT_ACCOUNT_ID, normalizeAccountId } from "openclaw/plugin-sdk/core";
+import { addWildcardAllowFrom, promptAccountId } from "openclaw/plugin-sdk/setup";
 import {
   listLinqAccountIds,
   resolveDefaultLinqAccountId,

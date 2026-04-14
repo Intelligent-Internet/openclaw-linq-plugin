@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
-import type { OpenClawConfig } from "openclaw/plugin-sdk";
-import { DEFAULT_ACCOUNT_ID, normalizeAccountId } from "openclaw/plugin-sdk";
+import type { OpenClawConfig } from "openclaw/plugin-sdk/src/plugins/types.js";
+import { DEFAULT_ACCOUNT_ID, normalizeAccountId } from "openclaw/plugin-sdk/core";
 import type { LinqAccountConfig } from "./types.js";
 
 export type ResolvedLinqAccount = {

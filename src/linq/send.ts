@@ -1,6 +1,6 @@
 import type { LinqSendResult } from "./types.js";
 import { resolveLinqAccount, type ResolvedLinqAccount } from "./accounts.js";
-import type { OpenClawConfig } from "openclaw/plugin-sdk";
+import type { OpenClawConfig } from "openclaw/plugin-sdk/src/plugins/types.js";
 
 const LINQ_API_BASE = "https://api.linqapp.com/api/partner/v3";
 const UA = "OpenClaw-Linq/1.0";

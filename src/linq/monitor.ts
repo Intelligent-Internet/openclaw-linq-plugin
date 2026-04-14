@@ -7,8 +7,8 @@ import type {
   LinqTextPart,
   LinqWebhookEvent,
 } from "./types.js";
-import type { OpenClawConfig } from "openclaw/plugin-sdk";
-import { createReplyPrefixOptions } from "openclaw/plugin-sdk";
+import type { OpenClawConfig } from "openclaw/plugin-sdk/src/plugins/types.js";
+import { createReplyPrefixOptions } from "openclaw/plugin-sdk/channel-reply-pipeline";
 import { resolveLinqAccount } from "./accounts.js";
 import { markAsReadLinq, sendMessageLinq, startTypingLinq } from "./send.js";
 import { getLinqRuntime } from "../runtime.js";
